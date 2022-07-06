@@ -16,7 +16,7 @@
 
 <form action="https://certainteed--loubui.sandbox.my.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
 
-<input type=hidden name='captcha_settings' value='{"keyname":"SFDC_CT_Webforms","fallback":"true","orgId":"00D590000004dec","ts":""}'>
+<input type=hidden name='captcha_settings' value='{"keyname":"CT_SFDC_Webforms","fallback":"true","orgId":"00D590000004dec","ts":""}'>
 <input type=hidden name="orgid" value="00D590000004dec">
 <input type=hidden name="retURL" value="https://loubuisw.github.io/">
 
@@ -32,13 +32,13 @@
 
 <label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
 
+<label for="phone">Phone</label><input  id="phone" maxlength="40" name="phone" size="20" type="text" /><br>
+
 <label for="subject">Subject</label><input  id="subject" maxlength="80" name="subject" size="20" type="text" /><br>
 
 <label for="description">Description</label><textarea name="description"></textarea><br>
 
-<label for="phone">Phone</label><input  id="phone" maxlength="40" name="phone" size="20" type="text" /><br>
-
-<div class="g-recaptcha" data-sitekey="6LdJe80gAAAAAE_TJiKr-g5GmwaMnbZl2QGUAmJI"></div><br>
+<div class="g-recaptcha" data-sitekey="6LdWos0gAAAAAOkx0QJWMNcbpelRmi60sBZjbvGn"></div><br>
 <input type="submit" name="submit">
 
 </form>
