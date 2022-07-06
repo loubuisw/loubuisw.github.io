@@ -1,62 +1,16 @@
-<!--  ----------------------------------------------------------------------  -->
-<!--  NOTE: Please add the following <META> element to your page <HEAD>.      -->
-<!--  If necessary, please modify the charset parameter to specify the        -->
-<!--  character set of your HTML page.                                        -->
-<!--  ----------------------------------------------------------------------  -->
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+<h1>SFDC Webforms Integration</h1>
+<p>Web to Case</p>
+<a href="https://loubuisw.github.io/Case_Contact_Us">Contact Us</a>
 
-<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
-<script src="https://www.google.com/recaptcha/api.js"></script>
-<script>
- function timestamp() { var response = document.getElementById("g-recaptcha-response"); if (response == null || response.value.trim() == "") {var elems = JSON.parse(document.getElementsByName("captcha_settings")[0].value);elems["ts"] = JSON.stringify(new Date().getTime());document.getElementsByName("captcha_settings")[0].value = JSON.stringify(elems); } } setInterval(timestamp, 500); 
-</script>
+<br></br><br></br><br></br><br></br>
 
-<!--  ----------------------------------------------------------------------  -->
-<!--  NOTE: Please add the following <FORM> element to your page.             -->
-<!--  ----------------------------------------------------------------------  -->
 
-<form action="https://certainteed--loubui.sandbox.my.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
+<p>Web to Lead</p>
 
-<input type=hidden name='captcha_settings' value='{"keyname":"CT_SFDC_Webforms","fallback":"true","orgId":"00D590000004dec","ts":""}'>
-<input type=hidden name="orgid" value="00D590000004dec">
-<input type=hidden name="retURL" value="https://loubuisw.github.io/">
-<input type=hidden name="recordType" id="recordType" value="0123w000001coel">
-
-<!--  ----------------------------------------------------------------------  -->
-<!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
-<!--  these lines if you wish to test in debug mode.                          -->
-<!--  <input type="hidden" name="debug" value=1>                              -->
-<!--  <input type="hidden" name="debugEmail"                                  -->
-<!--  value="the.bui@saint-gobain.com">                                       -->
-<!--  ----------------------------------------------------------------------  -->
-
-First Name:<input  id="00N3w000008x6NI" maxlength="80" name="00N3w000008x6NI" size="20" type="text" /><br>
-
-Last Name:<input  id="00N3w000008x6NN" maxlength="80" name="00N3w000008x6NN" size="20" type="text" /><br>
-
-<label for="phone">Phone</label><input  id="00N3w000008x6Nh" maxlength="40" name="00N3w000008x6Nh" size="20" type="text" /><br>
-
-<label for="email">Email</label><input  id="00N3w000008x6NX" maxlength="80" name="00N3w000008x6NX" size="20" type="text" /><br>
-
-Country:<select  id="00N0V000009TcMm" name="00N0V000009TcMm" title="Country"><option value="">--None--</option><option value="USA">USA</option>
-<option value="Canada">Canada</option>
-</select><br>
-
-Zip/Postal Code:<input  id="00N3w000009efAf" maxlength="255" name="00N3w000009efAf" size="20" type="text" /><br>
-
-Audience:<select  id="00N3w000009efAL" name="00N3w000009efAL" title="Audience"><option value="">--None--</option><option value="Architect">Architect</option>
-<option value="Homeowner">Homeowner</option>
-<option value="Contractor">Contractor</option>
-<option value="Designer">Designer</option>
-<option value="Builder">Builder</option>
-<option value="Distributor">Distributor</option>
-<option value="Retail">Retail</option>
-</select><br>
-
-<label for="subject">Subject</label><input  id="subject" maxlength="80" name="subject" size="20" type="text" /><br>
-
-<label for="description">Description</label><textarea name="description"></textarea><br>
-
-<div class="g-recaptcha" data-sitekey="6LdWos0gAAAAAOkx0QJWMNcbpelRmi60sBZjbvGn"></div><br>
-<input type="submit" name="submit">
-
-</form>
+</body>
+</html> 
